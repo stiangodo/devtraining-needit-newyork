@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>short_description</field>
+        <global>false</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>NeedIt Set Requested for</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+	//alert(g_user.hasRole('clint_script_admin'));
+	//g_form.addDecoration('short_description', 'icon-comment', 'Mark as Favorite', 'color-green');
+	//if(g_form.isNewRecord()) {
+	//	g_form.addInfoMessage("Husk å lagre saken!");
+	//}
+	
+	var handler = function(fieldname, originalValue, newValue) {
+	  console.log('The field ('+ fieldname + ') has a new value of: ' + newValue); // function code
+	}
+ 
+var unregister = g_form.onUserChangeValue(handler);
+	
+}
+
+function onSubmit() {
+	alert("On submit yeah");
+}
+
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if(!isLoading) {
+		g_form.save();
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-11 20:30:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f7755c4e2fe210101b36d8ddf699b6c6</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_name>NeedIt Set Requested for</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_f7755c4e2fe210101b36d8ddf699b6c6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-11 21:25:11</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view>User</view>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>9529d3fadb47b74491232f17d49619c6</instance_id>
+        <instance_name>dev91007</instance_name>
+        <name>sys_script_client_f7755c4e2fe210101b36d8ddf699b6c6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;short_description&lt;/field&gt;&lt;global&gt;false&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;NeedIt Set Requested for&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+	//alert(g_user.hasRole('clint_script_admin'));
+	//g_form.addDecoration('short_description', 'icon-comment', 'Mark as Favorite', 'color-green');
+	//if(g_form.isNewRecord()) {
+	//	g_form.addInfoMessage("Husk å lagre saken!");
+	//}
+	
+	var handler = function(fieldname, originalValue, newValue) {
+	  console.log('The field ('+ fieldname + ') has a new value of: ' + newValue); // function code
+	}
+ 
+var unregister = g_form.onUserChangeValue(handler);
+	
+}
+
+function onSubmit() {
+	alert("On submit yeah");
+}
+
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if(!isLoading) {
+		g_form.save();
+	}
+	
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-08-11 20:30:42&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f7755c4e2fe210101b36d8ddf699b6c6&lt;/sys_id&gt;&lt;sys_mod_count&gt;39&lt;/sys_mod_count&gt;&lt;sys_name&gt;NeedIt Set Requested for&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_f7755c4e2fe210101b36d8ddf699b6c6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-08-11 21:25:11&lt;/sys_updated_on&gt;&lt;table&gt;x_58872_needit_needit&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view&gt;User&lt;/view&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1465279177</payload_hash>
+        <record_name>NeedIt Set Requested for</record_name>
+        <reverted_from/>
+        <source>dd17bf752fa210101b36d8ddf699b6b3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-11 21:25:11</sys_created_on>
+        <sys_id>dc8268862f2610101b36d8ddf699b668</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>173df69ad200000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-11 21:25:11</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>588268863226101036455ff45be8d768</update_guid>
+        <update_guid_history>588268863226101036455ff45be8d768:1465279177,c3e16c86ed2610109e1beecbad219116:232169430,92812086b5261010162a66d0a6110118:-1238404944,e941ac46c926101096532f8de1643e7e:1253881332,6f11e846dd2610104da5af4d9421db49:988365015,4fc0ec46b0261010fc4f3341aa42b87a:-1194818367,03902c46362610108565321026ade9ff:2061175750,3560e0467826101014f0d0fe1c88738a:-1385667684,341f5c06c426101000258ea169a3b803:-1160207809,fbae1806ec261010d1b676d15474f805:87492547,50aed0068a26101004c23021d7d6fee5:-2008049235,999edcc21e261010caaef97975db7659:87492547,324e5006c0261010d6cf9b81cf00f038:-1780179685,2f1edcc226261010130d8b3ee583bfe2:1947372831,600e14c28f261010cacf7a7fdbd545c2:-2138220225,68cd98c2a1261010d0e48416293a8513:-1386678717,bb8d58c2e8261010d480d1235134a394:1578869888,eb2d14c20426101007ed633ca4b0728e:-1591246799,282d90c263261010e4226b477b369bcb:2020745181,0bfc1482b6261010b2a45e7a25c31089:-1842545603,d19c1482172610102efbde436a576256:-1984966937,e08c1482fb26101094702a753fe5f918:1641518824,5e3cd8ce72e21010ff86036c161701f6:-990424150,ad2c9082552610100cd8882529a23548:-1342000929,dfcb98ce79e21010505d7c2493541ad9:1342996787,c7a798cec4e210107c51de47766671d0:-1960587896,b787d0cecfe210103a04acce3e8e685e:575170825,377718ce31e210102d270f992462a13b:-1774803873,136794ce26e21010ac43dfd4a1603f2e:-2053026807,4357d0ceb0e210105fb6a231157bad4f:-1774803873,b737dc8e30e210107454abba6d1d0887:2022999495,4b271c8e03e2101063d81b5c3fcacf10:1109653917,06f65c8e33e21010600377da245aa0fa:-1567220601,f6d69c8e83e21010b5c728851f2ca6b5:-1543447715,dcc6588e26e2101077f4033601dfa82a:-1549888723,f5a6948e6de210103af03ec821f6fe0b:-1776615029,8b86988e00e2101051e3e6916847a526:-652946802,8276948e9be21010d8c2ec0912e9663c:-2129931360,3f365c0e98e210104ec28f154faad98e:-1855486243,5e065c8a74e21010ec91a6255b5d76fd:109614290</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-11 21:28:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>00ff0f7f76ed435e835601ec802a9029</sys_id>
+        <sys_metadata>f7755c4e2fe210101b36d8ddf699b6c6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NeedIt Set Requested for</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="NeedIt">88dabb792fa210101b36d8ddf699b638</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_client_f7755c4e2fe210101b36d8ddf699b6c6</sys_update_name>
+        <sys_update_version display_value="sys_script_client_f7755c4e2fe210101b36d8ddf699b6c6">dc8268862f2610101b36d8ddf699b668</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-11 21:28:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
